@@ -1,0 +1,45 @@
+.lider {
+    margin-bottom: 130px;
+    padding-top: 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-outer {
+        width: 688px;
+        height: 782px;
+        & img {
+            max-width: unset;
+        }
+    }
+
+    &__info {
+        padding-top: 150px;
+    }
+
+    &__suptitle {
+        font-weight: 700;
+        font-size: 40.8px;
+        line-height: 110%;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: 110%;
+        margin-bottom: 80px;
+    }
+
+
+    &__text {
+        font-size: 19px;
+        line-height: 150%;
+        max-width: 559px;
+
+        & .white {
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}

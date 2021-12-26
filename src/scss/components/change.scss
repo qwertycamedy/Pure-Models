@@ -1,0 +1,122 @@
+.change {
+  position: relative;
+  height: 457px;
+
+  &:before {
+    content: '';
+    width: 95%;
+    height: 457px;
+    background-image: url(../img/change-bg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    border: 2px solid #FFA2AF;
+    border-left: unset;
+    z-index: -1;
+  }
+
+  & .container {
+    max-width: 1530px;
+    margin: 0 0 0 auto;
+    padding-right: 195px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-left: auto;
+    max-width: max-content;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  &__img-outer {
+    width: 841px;
+    position: absolute;
+    left: 0;
+    transform: translate(-1000px, -145px);
+
+    & img {
+      max-width: unset;
+    }
+
+    & img:nth-child(2),
+    & img:nth-child(3) {
+      display: none;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 57px;
+    height: max-content;
+  }
+
+  &__title {
+    font-size: 42px;
+    line-height: 110%;
+    margin-bottom: 80px;
+    width: 430px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+
+  &__label {
+    width: 309px;
+    border-bottom: 2px solid var(--pure);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+  }
+
+  &__input {
+    border: unset;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+    line-height: 110%;
+
+    &::placeholder {
+      color: rgba(#fff, .7);
+    }
+  }
+
+  &__button {
+    transform: translateY(20px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 60px #D42169;
+    border-radius: 50%;
+    min-width: 228px;
+    width: 228px;
+    height: 228px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #fff;
+    background: var(--pure);
+    border: unset;
+    transition: background .3s linear,
+      border .3s linear;
+
+    &:hover {
+      background: #EB307B;
+      border: #EB307B;
+    }
+
+    &:active {
+      background: #BD175A;
+      border: #BD175A;
+    }
+  }
+}
